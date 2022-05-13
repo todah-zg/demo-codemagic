@@ -38,7 +38,13 @@ workflows:
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
       - name: Set up keystore
         script: |
-          echo $CM_KEYSTORE | base64 --decode > $CM_BUILD_DIR/keystore.keystore
+          echo $CM_KEYSTORE | base64 --decode > /tmp/keystore.keystore
+          cat >> "$CM_BUILD_DIR/android/key.properties" <<EOF
+          storePassword=$CM_KEYSTORE_PASSWORD
+          keyPassword=$CM_KEY_PASSWORD
+          keyAlias=$CM_KEY_ALIAS
+          storeFile=/tmp/keystore.keystore
+          EOF
       - name: Build Android release
         script: |
           # Set environment variable so it can be used to increment build number in android/app/build.gradle
