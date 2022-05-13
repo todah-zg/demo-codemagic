@@ -8,6 +8,9 @@
     ],
     "android": {
       "package": "io.codemagic.marijan.expo"
+    },
+    "ios": {
+      "bundleIdentifier": "io.codemagic.marijan.expo"
     }
   }
 }
