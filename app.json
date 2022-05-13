@@ -2,10 +2,12 @@
   "expo": {
     "name": "demo-codemagic",
     "slug": "demo-codemagic",
-    "package": "io.codemagic.marijan.expo",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "io.codemagic.marijan.expo"
+    }
   }
 }
