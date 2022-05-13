@@ -2,7 +2,7 @@
   "expo": {
     "name": "demo-codemagic",
     "slug": "demo-codemagic",
-    "package": "io.codemagic.marijan.expo",
+    "package": "com.democodemagic",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
