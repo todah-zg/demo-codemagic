@@ -237,7 +237,7 @@ android {
                 keyPassword 'android'
             }
             release {
-                    storeFile file(System.getenv()["CM_KEYSTORE_PATH"])
+                    storeFile file('/tmp/keystore.keystore')
                     storePassword System.getenv()["CM_KEYSTORE_PASSWORD"]
                     keyAlias System.getenv()["CM_KEY_ALIAS"]
                     keyPassword System.getenv()["CM_KEY_PASSWORD"]
