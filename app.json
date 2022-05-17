@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "demo-codemagic",
+    "name": "io.codemagic.marijan.expo",
     "slug": "demo-codemagic",
     "version": "1.0.0",
     "assetBundlePatterns": [
